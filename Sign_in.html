@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Sign_in.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>        <!--https://boxicons.com/ -->
+
+    <title>Login & Register Page  ->> Code With Patel</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="" onsubmit="return data()">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="icons"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="icons"><i class='bx bxl-github'></i></a>
+                    <a href="#" class="icons"><i class='bx bxl-linkedin'></i></a>
+                </div>
+                <span>Register with E-mail & Contact No.</span>
+                <input type="text" placeholder="Name" id="userid">
+                <input type="email" placeholder="Enter E-mail" id="emailInput">
+                <input type="text" placeholder="Enter contact number" required id="contact number">
+                <input type="text" placeholder="Genarate OTP" id="genarateOTP">
+                <button>Get OTP</button>
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="icons"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="icons"><i class='bx bxl-github'></i></a>
+                    <a href="#" class="icons"><i class='bx bxl-linkedin'></i></a>
+                </div>
+                <span>Login With Email & Password</span>
+                <input type="email" placeholder="Enter E-mail">
+                <input type="password" placeholder="Enter Password">
+                <a href="#">Forget Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Embrace the change get ready for <br> tomorrow</h1>
+                    <p>Sign in With Contact No. & OTP</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hii Rider's ....</h1>
+                    <p><h3>Outstation rides at your fare.
+                    Drive when you want, make what you need..</h3></p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+            const container = document.getElementById('container');
+            const registerBtn = document.getElementById('register');
+            const loginBtn = document.getElementById('login');
+
+            registerBtn.addEventListener('click', () => {
+                container.classList.add("active");
+            });
+
+            loginBtn.addEventListener('click', () => {
+                container.classList.remove("active");
+            });
+    
+        function data(){
+            var a = document.getElementById("userid").value;
+                            var b = document.getElementById("emailInput").value;
+                            var c = document.getElementById("contact number").value;
+                            var d = document.getElementById("genarateOTP").value;
+
+                            if(a == "" || b == "" || c == ""){
+                                    alert("All fields are required");
+                                    return false;
+                            }
+                            else if (c.length < 10 || c.length > 10){
+                                    alert("Number shuld be of 10 digits  !! Please enter valid Number");
+                                    return false;
+                                }
+
+                            else{
+                                        
+                                        let otp = '0123456789';
+                                    let temp = '';
+                                    for(let i = 0 ; i < 4 ; i++){
+                                        let stor = Math.floor(Math.random()*10);
+                                        temp += otp[stor];
+                                    }
+                                    document.getElementById('genarateOTP').value = temp;
+                                    alert('OTP Genarated sucessfully');
+                                    return false;
+
+                                    // alert("Form submitted successfully");
+                                    // return true;
+                                }
+                            
+                            
+        }
+        
+    </script>
+</body>
+
+</html>

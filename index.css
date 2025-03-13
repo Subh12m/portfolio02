@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    font-family: sans-serif;
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.image{
+    display: flex;
+
+  align-items: center;
+  min-height: 150vh;
+  background: url('speedo\ image/speedo2.jpg') no-repeat;
+  background-size: cover;
+  
+
+}
+
+
+
+.image2{
+    float: left;
+    border-radius: 50%;
+    width:67px;
+}
+.header{
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    padding: 8px 50px;
+}
+.logo{
+
+    width: 40%; 
+}
+.logo-img{
+    border: 1px solid rgb(136, 136, 74);
+    width: 60px;
+}
+.logo-img img{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    
+    width: 60%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li a{
+    display: inline-block;
+    color:white;
+    font-size: 90%;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 4px 20px;
+    border:1px solid #DFDFDE;
+    border-radius: 50px;
+    background-color: black;
+
+}
+.menu ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+.menu .search{
+    margin-bottom: 7%;
+    font-size: -10px;
+}
+.header-btn{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-btn input{
+    color:#100F0F ;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 4px 0 4px 35px;
+    border-radius: 50px;
+    outline: none;
+    border:1px solid #DFDFDE;
+
+}
+.header-btn i{
+    position: absolute;
+    left: 18px;
+
+}
+
+
+.wrapper{
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin-left: 70%;
+  margin-bottom: 30%;
+
+}
+
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255,255,255,.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+  color: #fff;
+
+}
+
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+  accent-color: #fff;
+  margin-right: 3px;
+
+}
+
+.remember-forgot a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
+
+}
+
+.wrapper .btn{
+  width: 100%;
+
+height: 45px;
+
+background:#fff;
+
+border: none;
+
+outline: none;
+
+border-radius: 40px;
+
+/* box-shadow: 0 10px rgba(0, 0, 0, 1); */
+
+cursor: pointer;
+
+font-size: 16px;
+
+color: #333;
+
+font-weight: 600;
+}
+
+.wrapper .register-link{
+  font-size: 14.5px;
+
+text-align: center;
+
+margin: 20px 0 15px;
+
+}
+
+.register-link p a{
+  color: #fff;
+
+text-decoration: none;
+
+font-weight: 600;
+
+}
+
+
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+button i{
+ padding: 5px;
+ 
+  font-size: 25px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    /* border-bottom: 1px solid rgb(224,223,223); */
+}
+.icon .car{
+    margin-inline: 74px;
+    margin-top: 31px;
+    border-bottom: 3px solid white;
+}
+.icon .car i{
+    font-size: 123%;
+    margin-left: 23%;
+    margin-bottom: 30%;
+}
+
+.head h1{
+  padding: 33px;
+  font-size: 53px;
+}
+.ride .auto{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.auto{
+  display: flex;
+}
+
+.auto  img{
+  margin-inline:33px ;
+  width: 13%;
+}
+.auto:hover{
+  transform: scale(1.1);
+  transition: .2s;
+
+}
+
+/* 2 */
+.ride .moto{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.moto{
+  display: flex;
+}
+
+.moto:hover{
+  transform: scale(1.1);
+  transition: .2s;
+
+}
+
+.moto  img{
+  margin-inline: 33px;
+  width: 13%;
+}
+
+/* 3 */
+
+.ride .car1{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.car1:hover{
+  transform: scale(1.1);
+  transition: .2s;
+
+}
+.car1{
+  display: flex;
+}
+
+.car1  img{
+  margin-inline: 13px;
+  width: 13%;
+}
+
+/* 4 */
+.ride .car2{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.car2:hover{
+  transform: scale(1.1);
+  transition: .2s;
+
+}
+.car2{
+  display: flex;
+}
+
+.car2  img{
+  margin-inline: 33px;
+  width: 13%;
+}
+
+
+/* dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: skyblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
